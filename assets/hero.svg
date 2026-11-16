@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050A1A"/>
+      <stop offset="0.6" stop-color="#0A1633"/>
+      <stop offset="1" stop-color="#14285C"/>
+    </linearGradient>
+
+    <!-- gold shimmer that sweeps across the title -->
+    <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="260" y2="0">
+      <stop offset="0" stop-color="#D4AF37"/>
+      <stop offset="0.5" stop-color="#FFF4C2"/>
+      <stop offset="1" stop-color="#D4AF37"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        from="-260 0" to="900 0" dur="3.5s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="260" rx="18" fill="url(#bg)"/>
+  <rect x="1" y="1" width="898" height="258" rx="17" fill="none" stroke="#D4AF37" stroke-opacity="0.35"/>
+
+  <!-- twinkling stars -->
+  <g fill="#F5D76E">
+    <circle cx="90"  cy="55"  r="2"   opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3s"   repeatCount="indefinite"/></circle>
+    <circle cx="190" cy="200" r="1.5" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="40"  r="2.5" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.6s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="410" cy="225" r="1.5" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.8s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="35"  r="2"   opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.2s" begin="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="215" r="2.5" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.8s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="60"  r="1.5" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.6s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="830" cy="190" r="2"   opacity="0"><animate attributeName="opacity" values="0;1;0" dur="3.4s" begin="0.2s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- title -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="1s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 25" to="0 0" dur="1s" fill="freeze"/>
+    <text x="450" y="135" text-anchor="middle" font-family="Segoe UI, Verdana, sans-serif"
+          font-size="64" font-weight="800" letter-spacing="2" fill="url(#gold)" filter="url(#glow)">Hey, I&#8217;m Hadjii!</text>
+  </g>
+
+  <!-- subtitle -->
+  <text x="450" y="180" text-anchor="middle" font-family="Segoe UI, Verdana, sans-serif"
+        font-size="18" letter-spacing="6" fill="#9FB0D9" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.8s" fill="freeze"/>
+    CURIOUS MIND. CREATIVE CODER.
+  </text>
+
+  <!-- line that draws itself -->
+  <line x1="330" y1="205" x2="570" y2="205" stroke="#D4AF37" stroke-width="2"
+        stroke-linecap="round" stroke-dasharray="240" stroke-dashoffset="240">
+    <animate attributeName="stroke-dashoffset" from="240" to="0" dur="1.5s" begin="1.2s" fill="freeze"/>
+  </line>
+</svg>
