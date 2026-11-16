@@ -44,14 +44,14 @@
     <animate attributeName="opacity" from="0" to="1" dur="1s" fill="freeze"/>
     <animateTransform attributeName="transform" type="translate" from="0 25" to="0 0" dur="1s" fill="freeze"/>
     <text x="450" y="135" text-anchor="middle" font-family="Segoe UI, Verdana, sans-serif"
-          font-size="64" font-weight="800" letter-spacing="2" fill="url(#gold)" filter="url(#glow)">Hey, I&#8217;m Hadjii!</text>
+          font-size="64" font-weight="800" letter-spacing="2" fill="url(#gold)" filter="url(#glow)">Hadjira Is Here!</text>
   </g>
 
   <!-- subtitle -->
   <text x="450" y="180" text-anchor="middle" font-family="Segoe UI, Verdana, sans-serif"
         font-size="18" letter-spacing="6" fill="#9FB0D9" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.8s" fill="freeze"/>
-    CURIOUS MIND. CREATIVE CODER.
+    DEBUG. LEARN. IMPROVE.
   </text>
 
   <!-- line that draws itself -->
