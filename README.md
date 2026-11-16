@@ -33,8 +33,9 @@ I enjoy learning, experimenting, building little things, and turning ideas into 
 ### 📡 Find me around the internet
 
 <p>
-  <a href="https://github.com/Hadjirarez">
-    <img src="https://img.shields.io/badge/GitHub-0A1128?style=for-the-badge&logo=github&logoColor=D4AF37" />
+<a href="https://discord.com/users/y_uki07">
+  <img src="https://img.shields.io/badge/Discord-0A1128?style=for-the-badge&logo=discord&logoColor=D4AF37" />
+</a>
   </a>
   <a href="https://www.linkedin.com/in/hadjira-rezzaz-008778435/">
     <img src="https://img.shields.io/badge/LinkedIn-0A1128?style=for-the-badge&logo=linkedin&logoColor=D4AF37" />
